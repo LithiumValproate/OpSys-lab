@@ -1,0 +1,151 @@
+# ========================================
+# 🧠 JetBrains IDE
+# ========================================
+.idea/
+*.iml
+out/
+# JetBrains 缓存与日志
+/.idea/*
+!.idea/.name
+!.idea/codeStyles
+!.idea/runConfigurations
+
+# ========================================
+# 🐍 Python
+# ========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.egg-info/
+*.eggs/
+*.pytest_cache/
+.pytest_cache/
+.cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+# pip / poetry
+pip-wheel-metadata/
+poetry.lock
+# Jupyter
+.ipynb_checkpoints
+*.ipynb~
+
+# ========================================
+# 🦁 CLion
+# ========================================
+*.o
+*.obj
+*.exe
+*.out
+*.so
+*.dll
+*.dSYM/
+*.a
+*.lib
+*.lo
+*.la
+*.cmake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+Makefile
+build/
+compile_commands.json
+
+# ========================================
+# 🐶 Go
+# ========================================
+bin/
+vendor/
+*.test
+*.exe
+*.out
+*.log
+# go modules
+go.sum
+# go coverage
+*.coverprofile
+*.cov
+coverage.txt
+
+# ========================================
+# 💎 Ruby
+# ========================================
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+Gemfile.lock
+pkg/
+log/
+tmp/
+coverage/
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# ========================================
+# 🟨 JavaScript / Node.js
+# ========================================
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+.vscode/
+.eslintcache
+.next/
+.nuxt/
+out/
+*.tsbuildinfo
+
+# ========================================
+# 🧮 Database / Data Files
+# ========================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql~
+*.bak
+*.db-journal
+*.log
+*.csv
+*.tsv
+*.jsonl
+
+# ========================================
+# 🍎 General / System / macOS
+# ========================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+*.lock
+*.bak
+*.orig
+*.rej
+*~
+*.kate-swp
+desktop.ini
+
+# ========================================
+# 🧪 Test / Reports
+# ========================================
+coverage/
+*.coverage
+*.lcov
+reports/
+test-output/
+
