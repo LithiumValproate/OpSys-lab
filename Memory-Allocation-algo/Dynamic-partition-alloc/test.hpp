@@ -4,13 +4,6 @@
 #include <iostream>
 using std::cout;
 
-extern void initMemory();
-extern int allocateMemory(long long);
-extern void freeMemory(int);
-extern void compactMemory();
-extern void showMemory();
-extern AllocAlgo currentAlgo;
-
 inline void runTests() {
     cout << "\n===== Running Test Script =====\n";
 
@@ -21,9 +14,9 @@ inline void runTests() {
 
     // 2. First Fit 测试
     cout << "\n[TEST] Allocate 100, 200, 300\n";
-    allocateMemory(100);  // id 1
-    allocateMemory(200);  // id 2
-    allocateMemory(300);  // id 3
+    allocateMemory(100); // id 1
+    allocateMemory(200); // id 2
+    allocateMemory(300); // id 3
     showMemory();
 
     // 3. Free block 2
@@ -34,19 +27,19 @@ inline void runTests() {
     // 4. Next Fit 测试
     cout << "\n[TEST] Switch to Next Fit, allocate 150\n";
     currentAlgo = AllocAlgo::Next_fit;
-    allocateMemory(150);   // id 4
+    allocateMemory(150); // id 4
     showMemory();
 
     // 5. Best Fit 测试
     cout << "\n[TEST] Switch to Best Fit, allocate 80\n";
     currentAlgo = AllocAlgo::Best_fit;
-    allocateMemory(80);    // id 5
+    allocateMemory(80); // id 5
     showMemory();
 
     // 6. Worst Fit 测试
     cout << "\n[TEST] Switch to Worst Fit, allocate 50\n";
     currentAlgo = AllocAlgo::Worst_fit;
-    allocateMemory(50);    // id 6
+    allocateMemory(50); // id 6
     showMemory();
 
     // 7. 紧缩

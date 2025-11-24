@@ -16,7 +16,7 @@ struct Block {
     Byte_Count size;
     bool free;
     Block* next;
-}* head = nullptr,* lastAllocPos = nullptr;
+} * head = nullptr, * lastAllocPos = nullptr;
 
 int nextId         = 1;
 Byte_Count memSize = 1LL * 1024 * 1024;
@@ -30,8 +30,7 @@ void initMemory() {
     }
 
     cout << "Input Memory Size (default: " << memSize << ") :" << endl;
-    Byte_Count sz;
-    if (cin >> sz && sz > 0) memSize = sz;
+    if (Byte_Count sz; cin >> sz && sz > 0) memSize = sz;
     else {
         cout << "Invalid input" << endl;
         cin.clear();
